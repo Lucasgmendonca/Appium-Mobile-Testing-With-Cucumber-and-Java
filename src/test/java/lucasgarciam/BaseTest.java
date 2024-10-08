@@ -24,7 +24,7 @@ public class BaseTest {
     public AppiumDriverLocalService service;
 
     @BeforeClass
-    public void ConfigureAppium() throws MalformedURLException, URISyntaxException {
+    public void ConfigureAppium() throws MalformedURLException, URISyntaxException, InterruptedException {
         service = new AppiumServiceBuilder().withAppiumJS(new File("C://Users//lucas//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
             .withIPAddress("127.0.0.1").usingPort(4723).build();
         service.start();
@@ -51,6 +51,14 @@ public class BaseTest {
                 "percent", 3.0
             ));
         }while(canScrollMore);
+    }
+
+    public void swipeAction(WebElement ele, String direction) {
+        ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement)ele).getId(),
+                "direction", direction,
+                "percent", 0.75
+            ));
     }
 
     @AfterClass
