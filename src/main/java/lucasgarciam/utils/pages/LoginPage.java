@@ -1,4 +1,4 @@
-package lucasgarciam.pageobjects;
+package lucasgarciam.utils.pages;
 
 import org.openqa.selenium.By;
 

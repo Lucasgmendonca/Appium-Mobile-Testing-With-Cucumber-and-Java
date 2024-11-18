@@ -1,4 +1,4 @@
-package lucasgarciam.utils;
+package lucasgarciam.utils.utils;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -31,7 +31,7 @@ public class BaseTest {
 
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("Lucasemulator");
-        options.setApp("C://Portifolios//Mobile-Testing//appium//src//test//java//resources//General-Store.apk");
+        options.setApp("C://Portifolios//Mobile-Testing//appium//src//test//java//lucasgarciam//resources//General-Store.apk");
         
         driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
