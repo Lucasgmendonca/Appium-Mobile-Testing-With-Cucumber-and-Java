@@ -77,11 +77,9 @@ Certifique-se de ter os seguintes componentes instalados:
     - Clique com o botão direito sobre o arquivo.
     - Selecione a opção 'Run Tests' (ou equivalente na sua IDE).
 
-Os resultados dos testes serão gerados nos seguintes diretórios:
-
-   ```bash
-   target/cucumber-reports
-   target/cucumber.json
-   target/cucumber.xml
-
+   Os resultados dos testes serão gerados nos seguintes diretórios:
    
+      ```bash
+      target/cucumber-reports
+      target/cucumber.json
+      target/cucumber.xml
