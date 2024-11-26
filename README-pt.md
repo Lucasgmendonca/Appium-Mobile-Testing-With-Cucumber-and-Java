@@ -1,3 +1,5 @@
+[Don't speak Portuguese? Click here](https://github.com/Lucasgmendonca/Appium-Mobile-Testing-With-Cucumber-and-Java/blob/main/README.md)
+
 # Teste mobile Appium com Cucumber e Java
 
 Este repositório contém um projeto de automação de testes móveis utilizando Appium, Cucumber e Java, focado em testar o processo de checkout de um aplicativo de e-commerce. O teste simula o comportamento do usuário ao navegar pelo aplicativo, adicionar produtos ao carrinho e finalizar a compra.
