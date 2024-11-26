@@ -1,83 +1,85 @@
-# Teste mobile Appium com Cucumber e Java
+[Não fala inglês? Clique aqui](https://github.com/Lucasgmendonca/Appium-Mobile-Testing-With-Cucumber-and-Java/blob/main/README-pt.md)
 
-Este repositório contém um projeto de automação de testes móveis utilizando Appium, Cucumber e Java, focado em testar o processo de checkout de um aplicativo de e-commerce. O teste simula o comportamento do usuário ao navegar pelo aplicativo, adicionar produtos ao carrinho e finalizar a compra.
+# Mobile Testing with Appium, Cucumber and Java
 
----
-
-## Tecnologias Utilizadas
-- **Appium**: Utilizado para automação de testes em dispositivos móveis.
-- **Cucumber**: Utilizado para definir cenários de teste no formato BDD.
-- **Java**: Linguagem de programação utilizada para escrever os testes.
-- **JUnit**: Framework de testes utilizado para execução e relatórios.
-- **Maven**: Gerenciador de dependências.
-- **TestNG**: Framework de testes para controle de execução.
-- **Selenium**: Utilizado para interação com elementos da interface do usuário.
+This repository contains a mobile test automation project using Appium, Cucumber, and Java, focused on testing the checkout process of an e-commerce application. The test simulates user behavior by navigating through the app, adding products to the cart, and completing the purchase.
 
 ---
 
-## Funcionalidade
-O fluxo de teste simula as seguintes etapas no aplicativo de e-commerce:
+## Technologies Used
+- **Appium**: For automating mobile device testing.
+- **Cucumber**: For defining test scenarios in BDD format.
+- **Java**: Programming language used to write the tests.
+- **JUnit**: Test framework for execution and reporting.
+- **Maven**: Dependency management tool.
+- **TestNG**: Test framework for execution control.
+- **Selenium**: For interacting with UI elements.
 
-1. O usuário faz login inserindo seu nome, selecionando o gênero e o país.
-2. O usuário navega pelas opções de produtos e adiciona dois produtos ao carrinho.
-3. O usuário acessa o carrinho, verifica os produtos adicionados e concorda com os termos para finalizar a compra.
-4. A compra é finalizada com sucesso.
+---
+
+## Functionality
+The test flow simulates the following steps in the e-commerce app:
+
+1. The user logs in by entering their name, selecting their gender, and choosing their country.
+2. The user navigates through product options and adds two items to the cart.
+3. The user accesses the cart, reviews the added products, and agrees to the terms to complete the purchase.
+4. The purchase is successfully finalized.
 
 ---
 
 ## Estrutura do Projeto
-O projeto segue uma abordagem de automação de testes utilizando o BDD (Behavior Driven Development) com o Cucumber, e os testes são escritos em Java. A estrutura do projeto é organizada da seguinte forma:
+The project follows a BDD (Behavior Driven Development) approach using Cucumber, and the tests are written in Java. The project structure is organized as follows:
 
-- **Pages**: Contém as classes que representam as páginas do aplicativo, como login, produtos e carrinho.
-- **StepDefinitions**: Contém os passos de teste do Cucumber, que representam as interações com as páginas.
-- **Utils**: Contém classes utilitárias para configurar e controlar o Appium, como a classe BaseTest que inicializa o driver.
-- **Features**: Contém os arquivos `.feature` que descrevem os cenários de teste em formato Gherkin.
-- **Runners**: Contém a classe `TestRunner` que executa os testes Cucumber.
+- **Pages**: Contains classes representing the app pages, such as login, products, and cart.
+- **StepDefinitions**: Contains Cucumber test steps, representing interactions with the pages.
+- **Utils**: Contains utility classes for configuring and managing Appium, such as the BaseTest class that initializes the driver.
+- **Features**: Contains .feature files describing test scenarios in Gherkin format.
+- **Runners**: Contains the TestRunner class to execute Cucumber tests.
 
 ---
 
-## Como Rodar o Projeto
+## How to Run the Project
 
-### Pré-requisitos
-Certifique-se de ter os seguintes componentes instalados:
+### Prerequisites
+Ensure the following components are installed:
 
-- **Appium**: Ferramenta de automação para dispositivos móveis.
-- **Node.js**: Requisito para o Appium.
-- **Android Studio**: Para emular um dispositivo Android.
-- **Java JDK** (versão 8 ou superior).
-- **Maven**: Gerenciador de dependências.
-- **Cucumber**: Para escrita de testes em formato Gherkin.
+- **Appium**: Tool for mobile device automation.
+- **Node.js**: Required for Appium.
+- **Android Studio**: To emulate an Android device.
+- **Java JDK** (version 8 or higher).
+- **Maven**: Dependency management tool.
+- **Cucumber**: For writing tests in Gherkin format.
 
-### Como Executar
+### Steps to Execute
 
-1. **Abra o Emulador**
-   Certifique-se de que o emulador de dispositivo (ou dispositivo físico) está ativo e configurado para rodar o projeto.
+1. **Launch the Emulator**
+   Ensure the device emulator (or physical device) is active and properly configured to run the project.
 
-2. **Inicie o Servidor Appium**
-   No terminal, execute o comando:
+2. **Start the Appium Server**
+   Run the following command in the terminal:
    
    ```bash
    appium
 
-3. **Clone o Repositório**  
-   Faça o clone do repositório do projeto:
+3. **Clone the Repository**  
+   Clone the project repository::
 
    ```bash
    git clone https://github.com/seu-usuario/Appium-Mobile-Testing-With-Cucumber-and-Java.git
    ```
 
-   ### Instale as Dependências
-   Navegue até o diretório do projeto e instale as dependências:
+   ### Install Dependencies
+   Navigate to the project directory and install dependencies:
 
    ```bash
    mvn install
    ```
-4. **Executando os Testes via IDE**
-    - Navegue até o arquivo `TestRunner.java` no diretório correspondente.
-    - Clique com o botão direito sobre o arquivo.
-    - Selecione a opção 'Run Tests' (ou equivalente na sua IDE).
+4. **Run the Tests via IDE**
+    - Navigate to the `TestRunner.java` file in the appropriate directory.
+    - Right-click on the file.
+    - Select the 'Run Tests' option (or equivalent in your IDE).
 
-   Os resultados dos testes serão gerados nos seguintes diretórios:
+   Test results will be generated in the following directories:
    
       ```bash
       target/cucumber-reports
