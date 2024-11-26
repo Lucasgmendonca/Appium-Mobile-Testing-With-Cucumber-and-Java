@@ -27,7 +27,7 @@ The test flow simulates the following steps in the e-commerce app:
 
 ---
 
-## Estrutura do Projeto
+## Project Structure
 The project follows a BDD (Behavior Driven Development) approach using Cucumber, and the tests are written in Java. The project structure is organized as follows:
 
 - **Pages**: Contains classes representing the app pages, such as login, products, and cart.
