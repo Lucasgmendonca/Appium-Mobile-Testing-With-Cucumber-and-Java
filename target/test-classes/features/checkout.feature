@@ -13,3 +13,7 @@ Feature: eCommerce Checkout
     Then the user should see the second product "Jordan 6 Rings" in the cart
     When the user agrees to the terms and completes the purchase
     Then the purchase should be completed successfully
+
+
+
+    

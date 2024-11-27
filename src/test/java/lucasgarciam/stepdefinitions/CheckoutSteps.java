@@ -2,8 +2,8 @@ package lucasgarciam.stepdefinitions;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
-import lucasgarciam.utils.pages.*;
-import lucasgarciam.utils.utils.BaseTest;
+import lucasgarciam.pages.*;
+import lucasgarciam.utils.BaseTest;
 
 public class CheckoutSteps extends BaseTest {
 

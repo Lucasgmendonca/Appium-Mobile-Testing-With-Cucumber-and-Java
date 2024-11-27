@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="44.314">
-    <testcase classname="eCommerce Checkout" name="Successful checkout of products" time="44.192">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="52.865">
+    <testcase classname="eCommerce Checkout" name="Successful checkout of products" time="52.726">
         <system-out><![CDATA[Given the user is on the login page.........................................passed
 When the user enters the name "Lucas Garcia"................................passed
 And the user selects gender "Male"..........................................passed

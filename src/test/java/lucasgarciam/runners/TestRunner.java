@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     publish = true,
-    features = "src/test/java/lucasgarciam/resources/features",
+    features = "src/test/resources/features",
     glue = "lucasgarciam.stepdefinitions",
     plugin = {
         "pretty", 
